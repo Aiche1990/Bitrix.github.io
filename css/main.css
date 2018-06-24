@@ -1105,7 +1105,7 @@ section#testimonials {
     section#testimonials .testimonial-nav ul li {
       list-style: none;
       text-align: center;
-      font-size: 72px;
+      font-size: 36px;
       font-weight: 700;
       position: relative;
       right: 45px;
@@ -1123,11 +1123,12 @@ section#testimonials {
         section#testimonials .testimonial-nav ul li {
           padding: 0 15px; } }
     section#testimonials .testimonial-nav ul .active {
-      color: #373dcc; }
+      color: #373dcc;
+      -webkit-transform: scale(2);
+              transform: scale(2); }
     section#testimonials .testimonial-nav ul .active:hover {
       color: #ccc; }
     section#testimonials .testimonial-nav ul .deactive {
-      font-size: 36px;
       color: #ccc;
       transition: all 300ms;
       cursor: pointer; }
@@ -1136,7 +1137,7 @@ section#testimonials {
   @media (max-width: 1220px) {
     section#testimonials .btn-grp {
       display: flex;
-      margin: 0 auto;
+      margin: 50px auto;
       justify-content: center; } }
   section#testimonials .btn-grp .next {
     position: absolute;
