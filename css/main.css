@@ -136,7 +136,7 @@ header {
           border: none; }
         header .container .wrapper .text-wrapper .btn-learn-more:hover {
           -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+                  transform: scale(1.05);
           box-shadow: 0px 25px 15px -15px rgba(0, 0, 0, 0.3); }
       header .container .wrapper .image-wrapper {
         position: relative; }
@@ -966,7 +966,7 @@ section#services {
 
 section#testimonials {
   width: 80%;
-  height: 1000px;
+  height: 1100px;
   margin: 0 auto;
   position: relative; }
   @media (max-width: 420px) {
@@ -995,7 +995,7 @@ section#testimonials {
             transform: rotate(90deg);
     left: 0;
     right: 0;
-    bottom: 450px;
+    bottom: 550px;
     margin-left: auto;
     margin-right: auto;
     z-index: -1; }
@@ -1014,8 +1014,7 @@ section#testimonials {
     background-position: center center;
     background-size: cover;
     margin: 150px auto 50px;
-    position: relative;
-    transition: all 200ms cubic-bezier(0.25, 0.39, 0.39, 2.01); }
+    position: relative; }
     @media (max-width: 990px) {
       section#testimonials .testimonial-box {
         width: 100%; } }
@@ -1045,8 +1044,10 @@ section#testimonials {
           section#testimonials .testimonial-box .box-content h1,
           section#testimonials .testimonial-box .box-content-2 h1,
           section#testimonials .testimonial-box .box-content-3 h1 {
-            font-size: 48px;
-            padding-top: 80px; } }
+            font-size: 32px;
+            padding-top: 80px;
+            padding-left: 0px;
+            padding-right: 0; } }
       section#testimonials .testimonial-box .box-content hr,
       section#testimonials .testimonial-box .box-content-2 hr,
       section#testimonials .testimonial-box .box-content-3 hr {
@@ -1085,9 +1086,6 @@ section#testimonials {
     section#testimonials .testimonial-box .box-content-2,
     section#testimonials .testimonial-box .box-content-3 {
       opacity: 0; }
-  section#testimonials .testimonial-box:hover {
-    -webkit-transform: scale(1.05);
-            transform: scale(1.05); }
   section#testimonials .testimonial-nav {
     position: absolute;
     right: -30px;
@@ -1126,6 +1124,10 @@ section#testimonials {
       color: #373dcc;
       -webkit-transform: scale(2);
               transform: scale(2); }
+      @media (max-width: 480px) {
+        section#testimonials .testimonial-nav ul .active {
+          -webkit-transform: scale(1.8);
+                  transform: scale(1.8); } }
     section#testimonials .testimonial-nav ul .active:hover {
       color: #ccc; }
     section#testimonials .testimonial-nav ul .deactive {
@@ -1180,3 +1182,130 @@ section#testimonials {
   section#testimonials .btn-grp .next:hover,
   section#testimonials .btn-grp .previous:hover {
     background-image: url("../img/arrow-ac.png"); }
+
+footer {
+  margin-top: -100px;
+  width: 100%;
+  height: 450px;
+  background: #06e18f;
+  position: relative; }
+  footer .newsletter-box {
+    width: 80%;
+    height: 400px;
+    background-image: url("../img/bg.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -300px;
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center; }
+    @media (max-width: 600px) {
+      footer .newsletter-box {
+        background-size: contain; } }
+    @media (max-width: 600px) {
+      footer .newsletter-box {
+        width: 100%; } }
+    footer .newsletter-box .newsletter {
+      width: 50%;
+      height: 250px;
+      background: white;
+      margin: 300px auto 0;
+      position: relative; }
+      @media (max-width: 833px) {
+        footer .newsletter-box .newsletter {
+          width: 80%; } }
+      @media (max-width: 533px) {
+        footer .newsletter-box .newsletter {
+          width: 80%;
+          margin: 150px auto 0; } }
+      footer .newsletter-box .newsletter h3 {
+        font-size: 36px;
+        letter-spacing: 8px;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        padding-top: 26px;
+        color: #252525; }
+        @media (max-width: 533px) {
+          footer .newsletter-box .newsletter h3 {
+            font-size: 24px; } }
+      footer .newsletter-box .newsletter hr {
+        width: 100px;
+        height: 10px;
+        background: #06e18f;
+        border: 0;
+        position: absolute;
+        left: -50px; }
+        @media (max-width: 833px) {
+          footer .newsletter-box .newsletter hr {
+            margin: 0 auto;
+            position: static; } }
+      footer .newsletter-box .newsletter p {
+        text-align: left;
+        font-size: 14px;
+        color: black;
+        margin: 5px 0 0 60px; }
+        @media (max-width: 833px) {
+          footer .newsletter-box .newsletter p {
+            text-align: center;
+            margin: 5px 0; } }
+      footer .newsletter-box .newsletter input {
+        border: 2px solid #ccc;
+        width: 70%;
+        padding: 8px 8px;
+        margin-top: 20px;
+        color: #252525; }
+      footer .newsletter-box .newsletter .btn-submit {
+        display: block;
+        margin: 25px auto 0;
+        font-size: 14px;
+        letter-spacing: 4px;
+        color: white;
+        border: 0;
+        background: #373dcc;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding: 10px 15px;
+        cursor: pointer;
+        box-shadow: 0px 15px 10px -10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms cubic-bezier(0.25, 0.39, 0.39, 2.01); }
+      footer .newsletter-box .newsletter .btn-submit:hover {
+        -webkit-transform: scale(1.05);
+                transform: scale(1.05);
+        box-shadow: 0px 25px 15px -15px rgba(0, 0, 0, 0.3); }
+  footer .information {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: 0 auto;
+    display: inline-block;
+    padding-bottom: 10px; }
+    footer .information .logo {
+      width: 50px;
+      height: 70px;
+      background-image: url("../img/bitrix-2.svg");
+      background-size: cover;
+      background-position: center center;
+      margin: 20px auto; }
+    footer .information a {
+      font-size: 14px;
+      color: white;
+      text-decoration: none;
+      padding: 0 40px; }
+      @media (max-width: 533px) {
+        footer .information a {
+          padding: 0 20px; } }
+      @media (max-width: 372px) {
+        footer .information a {
+          padding: 0 10px; } }
+    footer .information .copyright {
+      margin-top: 30px; }
+    footer .information p {
+      color: white;
+      font-size: 14px;
+      margin: 0; }
