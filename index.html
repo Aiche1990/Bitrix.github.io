@@ -54,12 +54,14 @@
                 <div class="play-icon"></div>
             </div>
         </div>
+
         <div class="consult-text">
             <h4>CONSULT WITH US</h4>
             <hr>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto molestiae reprehenderit odit, molestias aperiam voluptatibus dolore, labore aspernatur libero.</p>
-            <button>BOOK NOW</button>
         </div>
+        <button>BOOK NOW</button>
+
         <hr class="hr-2">
     </section>
 
@@ -101,23 +103,38 @@
     </section>
 
     <section id="testimonials">
+        <hr class="hr-one">
+        <div class="letter-design">"</div>
         <div class="testimonial-box">
-            <h1>Alfred Alvarez</h1>
-            <hr>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ratione voluptas veniam facere est culpa, officia adipisci soluta possimus accusamus tempore laudantium voluptatem nisi et temporibus numquam dignissimos. Voluptatibus, ut.</p>
+            <div class="box-content">
+                <h1>Alfred Alvarez</h1>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ratione voluptas veniam facere est culpa, officia adipisci soluta possimus accusamus tempore laudantium voluptatem nisi et temporibus numquam dignissimos. Voluptatibus, ut.</p>    
+            </div>
+            <div class="box-content-2">
+                <h1>Cedrick Lanas</h1>
+                <hr>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae facilis reprehenderit nisi soluta harum iure accusamus ducimus molestias placeat totam? Similique illo porro ipsam alias, enim impedit consequuntur, amet error fugit quia</p>    
+            </div>
+            <div class="box-content-3">
+                <h1>Frederick Nian</h1>
+                <hr>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat excepturi repudiandae iste dolores laudantium velit aliquam quae corrupti dolorum! Sunt reiciendis sapiente quasi voluptatem laboriosam ipsum, ullam sit ducimus quam.</p>    
+            </div>
         </div>
         <div class="testimonial-nav">
-            <div class="ul">
-                <li>01</li>
-                <li>02</li>
-                <li>03</li>
-            </div>
+            <ul>
+                <li class="deactive" onclick="activeOne()">01</li>
+                <li class="active" onclick="activeTwo()">02</li>
+                <li class="deactive" onclick="activeThree()">03</li>
+            </ul>
 
             <div class="btn-grp">    
-                <button class="next"> next </button>
-                <button class="preview">preview</button>
+                <button class="next" onclick="next()"></button>
+                <button class="previous" onclick="previous()"></button>
             </div>
         </div>
+        <hr class="hr-two">
     </section>
 
 </body>
